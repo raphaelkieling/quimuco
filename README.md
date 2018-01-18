@@ -56,3 +56,6 @@ Create a config called qmc-config.json in folder project
 ```sh
     quimuco
 ```
+
+### Help
+Run in your cmd *quimuco --help* or create a issue
