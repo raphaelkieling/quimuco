@@ -1,0 +1,24 @@
+{
+  "name": "quimuco",
+  "version": "2.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "quimuco": "./bin/index.js"
+  },
+  "preferGlobal": true,
+  "keywords": [],
+  "author": "Raphael Kieling Tondin",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^0.14.3"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "command-line-args": "^4.0.7",
+    "commander": "^2.13.0"
+  }
+}
