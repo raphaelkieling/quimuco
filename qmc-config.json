@@ -1,10 +1,19 @@
 {
     "directory": "",
-    "changer": {
-        "recipient": "$",
-        "input": "teste"
-    },
+    "changer": [
+        {
+            "recipient": "$",
+            "input": "teste"
+        },
+        {
+            "recipient": "*",
+            "input": "teste2"
+        }
+    ],
     "commands": [
-        "mkdir $"
+        "ng g m */$",
+        "ng g c */$/$-list",
+        "ng g c */$/$-form",
+        "ng g s */$/service/$"
     ]
 }

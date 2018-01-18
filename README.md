@@ -23,10 +23,12 @@ Create a config called qmc-config.json in folder project
 ```json
 {
     "directory": "src",
-    "changer": {
-        "recipient": "$",
-        "input": "folderName"
-    },
+    "changer": [
+        {
+            "recipient": "$",
+            "input": "folderName"
+        }
+    ],
     "commands": [
         "mkdir $",
         "rmdir $"
@@ -38,15 +40,21 @@ Create a config called qmc-config.json in folder project
 ```json
 {
     "directory": "",
-    "changer": {
-        "recipient": "$",
-        "input": "navbar"
-    },
+    "changer": [
+        {
+            "recipient": "$",
+            "input": "components"
+        },
+        {
+            "recipient": "$",
+            "input": "job"
+        }
+    ],
     "commands": [
-        "ng g m components/$",
-        "ng g c components/$/$-list",
-        "ng g c components/$/$-form",
-        "ng g s components/$/service/$"
+        "ng g m */$",
+        "ng g c */$/$-list",
+        "ng g c */$/$-form",
+        "ng g s */$/service/$"
     ]
 }
 ```
