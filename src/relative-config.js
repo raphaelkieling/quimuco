@@ -13,6 +13,9 @@ module.exports = (config, commander) => {
     }
 
     function replaceJoker(command) {
+        if(!config.changer){
+            return;
+        }
         config.changer.map((changer) => {
             command = command.replace(new RegExp(`\\${getRecipientValue()}`, 'g', ), getInputValue());
 
