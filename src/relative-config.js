@@ -4,8 +4,7 @@ module.exports = (config, commander) => {
     };
 
     function configCommands(commands) {
-        console.log(checkJoker(commands));
-        // commands = checkJoker(commands);
+        commands = checkJoker(commands);
         return commands;
     }
 
@@ -15,7 +14,7 @@ module.exports = (config, commander) => {
 
     function replaceJoker(command) {
         config.changer.map((changer) => {
-            command =  command.replace(new RegExp(`\\${getRecipientValue()}`, 'g', ), getInputValue());
+            command = command.replace(new RegExp(`\\${getRecipientValue()}`, 'g', ), getInputValue());
 
             function getRecipientValue() {
                 return changer && changer.recipient || '$';

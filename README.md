@@ -29,20 +29,27 @@ Create a config called qmc-config.json in folder project
             "input": "folderName"
         }
     ],
-    "commands": [
-        "mkdir $",
-        "rmdir $"
-    ]
+    "commands": {
+        "creanteAndRemoveFolder":[
+            "mkdir $",
+            "rmdir $"
+        ]
+    }
 }
 ```
 
 #### Angular example
+Create a folder called folder1 and after create a base to crud in angular with service (the folder is a example)
 ```json
 {
     "directory": "",
     "changer": [
         {
-            "recipient": "$",
+            "recipient": "$dir1",
+            "input": "folder1"
+        },
+        {
+            "recipient": "*",
             "input": "components"
         },
         {
@@ -50,12 +57,17 @@ Create a config called qmc-config.json in folder project
             "input": "job"
         }
     ],
-    "commands": [
-        "ng g m */$",
-        "ng g c */$/$-list",
-        "ng g c */$/$-form",
-        "ng g s */$/service/$"
-    ]
+    "commands": {
+        "createFolder": [
+            "mkdir $dir1",
+        ],
+        "createCrud": [
+            "ng g m */$",
+            "ng g c */$/$-list",
+            "ng g c */$/$-form",
+            "ng g s */$/service/$"
+        ]
+    }
 }
 ```
 

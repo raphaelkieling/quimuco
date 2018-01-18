@@ -1,19 +1,15 @@
 {
-    "directory": "",
+    "directory": "src",
     "changer": [
         {
             "recipient": "$",
-            "input": "teste"
-        },
-        {
-            "recipient": "*",
-            "input": "teste2"
+            "input": "folderName"
         }
     ],
-    "commands": [
-        "ng g m */$",
-        "ng g c */$/$-list",
-        "ng g c */$/$-form",
-        "ng g s */$/service/$"
-    ]
+    "commands": {
+        "creanteAndRemoveFolder":[
+            "mkdir $",
+            "rmdir $"
+        ]
+    }
 }
