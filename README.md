@@ -26,7 +26,7 @@ Create a config called qmc-config.json in folder project
 }
 ```
 
-#### Create and Remove a folder in folder src (check the fild DIRECTORY in json)
+#### Create and Remove a folder in folder src (check the field DIRECTORY in json)
 ```json
 {
     "directory": "src",
