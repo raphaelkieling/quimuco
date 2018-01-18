@@ -1,6 +1,10 @@
 {
-    "directory":"",
+    "directory": "",
+    "changer": {
+        "recipient": "$",
+        "input": "teste"
+    },
     "commands": [
-        "mkdir papai"
+        "mkdir $"
     ]
 }
