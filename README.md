@@ -9,13 +9,20 @@ quick multi commands
 ### Creating a config
 Create a config called qmc-config.json in folder project
 
+### List of parameters in config
+- *directory*
+- *commands*
+- *changer* 
+
 #### Example
 ```json
 {
     "directory": "",
-    "commands": [
-        "mkdir hello world",
-    ]
+    "commands": {
+        "createFolderCalledHelloWorld":[
+            "mkdir hello world",
+        ]
+    }
 }
 ```
 
