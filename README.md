@@ -51,3 +51,8 @@ Create a config called qmc-config.json in folder project
 }
 ```
 
+### Run in your folder with container qmc-config.json
+
+```sh
+    quimuco
+```
