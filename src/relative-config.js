@@ -16,6 +16,7 @@ module.exports = (config, commander) => {
         if(!config.changer){
             return;
         }
+
         config.changer.map((changer) => {
             command = command.replace(new RegExp(`\\${getRecipientValue()}`, 'g', ), getInputValue());
 

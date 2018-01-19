@@ -2,7 +2,7 @@ const chalk = require('chalk');
 const execSync = require('child_process').execSync;
 
 module.exports = (commands, path, groupName) => {
-    console.log('[GROUPS]: ', groupName);
+    console.log(chalk.yellow(`[GROUP]: ${groupName}`));
 
     for (let i in commands) {
         console.log(chalk.blue('[in-process]:', commands[i]));
