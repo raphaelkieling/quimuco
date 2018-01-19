@@ -20,7 +20,7 @@ Create a config called qmc-config.json in folder project
     "directory": "",
     "commands": {
         "createFolderCalledHelloWorld":[
-            "mkdir hello world",
+            "mkdir hello\ world",
         ]
     }
 }
