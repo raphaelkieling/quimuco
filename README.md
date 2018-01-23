@@ -1,10 +1,16 @@
 ## Quimuco
-quick multi commands   
+quick multi commands
 
 ### Install
 ```sh
     npm install quimuco
 ``` 
+
+### Github
+Star if your like this package :star:   
+Contribute to create new features or fix bugs   
+*We are the community* 
+[Github Project](https://github.com/raphaelkieling/quimuco)
 
 ### Creating a config
 Create a config called qmc-config.json in folder project
