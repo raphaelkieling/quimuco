@@ -1,13 +1,13 @@
 {
-    "directory": "src",
-    "changer": [
+    "directory":"src",
+    "changer":[
         {
             "recipient": "$",
             "input": "folderName"
         }
     ],
-    "commands": {
-        "creanteAndRemoveFolder":[
+    "commands":{
+        "myNameFunction":[
             "mkdir $",
             "rmdir $"
         ]

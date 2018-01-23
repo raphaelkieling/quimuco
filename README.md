@@ -1,6 +1,8 @@
 ## Quimuco
 quick multi commands
 
+![Gif Command](https://media.giphy.com/media/3ohc14KUXCqpPrPfZ6/giphy.gif)
+
 ### Install
 ```sh
     npm install quimuco
